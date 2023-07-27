@@ -1,5 +1,6 @@
 # git-alias
 
+```
 alias=!git config -l | grep alias | cut -c 7-
 a=add
 aa=!git add . && git add -u . && git status
@@ -19,7 +20,8 @@ develop=checkout develop
 cp=cherry-pick
 fp=fetch --prune
 l=log --graph --oneline --decorate --all
-ll=log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+ll=log --color --graph --pretty=format:'%Cred%h%Creset -%C(yllow)%d%Creset %s 
+%Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
 lg=log --stat --abbrev-commit
 lst=log --graph --decorate --oneline --abbrev-commit --all --name-status
 changelog=log --pretty=format:'%s%n%b'
@@ -32,3 +34,4 @@ rba=rebase --autosquash
 ok=rebase --continue
 ss=show --stat
 s=status
+```
